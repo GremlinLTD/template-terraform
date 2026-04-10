@@ -1,18 +1,45 @@
-# Project name
+# terraform-PROVIDER-NAME
 
-> Replace this with your project description.
+> Replace this with your module description.
 
-## Setup
+## Usage
+
+```hcl
+module "example" {
+  source  = "gremlinltd/NAME/PROVIDER"
+  version = "~> 1.0"
+
+  # example = "value"
+}
+```
+
+## Requirements
+
+| Name      | Version |
+| --------- | ------- |
+| terraform | >= 1.5  |
+
+## Inputs
+
+<!-- TODO: Document inputs -->
+
+## Outputs
+
+<!-- TODO: Document outputs -->
+
+## Development
 
 ```sh
 git clone https://github.com/gremlinltd/REPO_NAME.git
 cd REPO_NAME
+terraform init
+terraform validate
 ```
 
 ## After creating a repo from this template
 
-1. Replace `REPO_NAME` in `cog.toml`, `cliff.toml`, `CONTRIBUTING.md`, and this README
-2. Add a `sonar-project.properties` with your SonarCloud project key
-3. Set up SonarCloud and Codecov for the repo
-4. Add language-specific CI and release workflows
-5. Update this README with actual project docs
+1. Rename the repo to `terraform-<provider>-<name>` (Terraform registry convention)
+2. Replace `REPO_NAME` in `cog.toml`, `cliff.toml`, `sonar-project.properties`, `CONTRIBUTING.md`, and this README
+3. Uncomment and configure the provider in `versions.tf`
+4. Set up SonarCloud project and add `SONAR_TOKEN` as a repo secret
+5. Update this README with actual module docs
