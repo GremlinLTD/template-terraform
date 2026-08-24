@@ -8,10 +8,8 @@
 
 ## How to test
 
-- [ ] `terraform fmt -check -recursive`
-- [ ] `terraform validate`
-- [ ] `tflint --recursive`
-- [ ] Tested with `terraform plan` in an example
+- [ ] Tests pass
+- [ ] Tested manually
 
 ## Commit type
 
